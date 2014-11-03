@@ -12,11 +12,10 @@ import edu.fcps.karel2.Robot;
 public class Lab00 {
 
      public static void main(String[] args) {
-             Display.openWorld("maps/first.map");
+             Display.openWorld("maps/school.map");
    Display.setSize(10, 10);
    Display.setSpeed(1);
    Robot karel = new Robot();
-   Robot George = new Robot(3, 2, Display.South,1);
    karel.move();
    karel.pickBeeper();
    karel.move();
@@ -25,7 +24,6 @@ public class Lab00 {
    karel.putBeeper();
    karel.move();
    karel.turnLeft();
-   
    karel.turnLeft();
   
      }
